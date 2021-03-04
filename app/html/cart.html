@@ -1,0 +1,75 @@
+@@include('_head.html',{"title":"pirosmani"})
+@@include('_header.html',{})
+
+
+    <hr>
+
+    <div class="container">
+      <div class="cart__title">
+        <h3>Корзина</h3>
+      </div>
+      <div class="row">
+        <div class="col-sm-8 carts">
+          <div class="d-flex cart">
+            <a href="#">X</a>
+            <img src="images/cart-defolt.png" alt="">
+            <p class="name">Хачапури</p>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-secondary">-</button>
+              <button type="button" class="btn btn-outline-secondary">1шт</button>
+              <button type="button" class="btn btn-outline-secondary">+</button>
+            </div>
+            <p class="price">350 ₽</p>
+          </div>
+
+          <div class="d-flex cart">
+            <a href="#">X</a>
+            <img src="images/cart-defolt.png" alt="">
+            <p class="name">Хачапури</p>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-secondary">-</button>
+              <button type="button" class="btn btn-outline-secondary">1шт</button>
+              <button type="button" class="btn btn-outline-secondary">+</button>
+            </div>
+            <p class="price">350 ₽</p>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="prod-card" id="cart">
+            <div class="prod-content">
+              <div class="prod-delivery">
+                <div class="prod-delivery-title">
+                  <h3>Закажите на 3000 RUB и получите</h3>
+                </div>
+                <div class="prod-delivery-content">
+                  <div class="prod-delivery-content-first">
+                    <img src="images/prod-delivery-pig.svg" alt="">
+                    <p><b>30 RUB</b> на бонусный счет</p>
+                  </div>
+                  <div class="prod-delivery-content-second">
+                    <img src="images/prod-delivery-car.svg" alt="">
+                    <p><b>Бесплатная доставка</b></p>
+                  </div>
+                </div>
+                @@include('_progress_bar.html',{})
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------- Footer ----------------------->
+
+  @@include('_footer.html',{})
+
+  <!-------------------- Modal ----------------------->
+
+  @@include('_modal.html',{})
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/main.min.js"></script>
+  </body>
+</html>

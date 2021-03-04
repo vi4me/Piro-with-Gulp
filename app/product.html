@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>pirosmani</title>
+  <meta name="description" content="Star Wars">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <a class="navbar-brand first" href="index.html"><img src="images/logo2.png" alt=""></a>
+      <a class="navbar-brand second" href="index.html"><img src="images/logo1.png" alt=""></a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Меню</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#"><img src="images/Vector1.svg">Супы</a>
+                <a class="dropdown-item" href="#"><img src="images/Vector2.svg">Хачапури</a>
+                <a class="dropdown-item" href="#"><img src="images/Vector3.svg">Холодные закуски</a>
+                <a class="dropdown-item" href="#"><img src="images/Vector11.svg">Хинкали</a>
+                <a class="dropdown-item" href="#"><img src="images/Vector4.svg">Шашлык</a>
+                <a class="dropdown-item" href="#"><img src="images/Vector5.svg">Соусы</a>
+                <a class="dropdown-item" href="#"><img src="images/Vector6.svg">Салаты</a>
+                <a class="dropdown-item" href="#"><img src="images/Vector7.svg">Горячие Блюда</a>
+                <a class="dropdown-item" href="#"><img src="images/Vector8.svg">Гарнир</a>
+                <a class="dropdown-item" href="#"><img src="images/Vector9.svg">Десерты</a>
+                <a class="dropdown-item" href="#"><img src="images/Vector10.svg">Напитки</a>
+              </div>
+          </li>
+          <li class="nav-item">
+            <a href="delivery.html" class="nav-link">Доставка</a>
+          </li>
+          <li class="nav-item">
+            <a href="payment.html" class="nav-link">Оплата</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Бронь стола</a>
+          </li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <ul class="d-flex align-items-center justify-content-start">
+          <li class="phone-card">
+            <a href="tel:78312826000"><img id="phone" src="images/phone.svg" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <p>+7 (831) 282-60-00</p>
+          </li>
+          <li class="nav-item">
+            <a href="" data-toggle="modal" data-target="#personeModal"><img id="person" src="images/person.svg" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a href="cart.html"><img id="cart" src="images/cart.svg" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+<hr>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8 col-sm-12">
+      <div class="prod-img">
+        <img class="img-fluid" src="images/big-prod.png" alt="">
+      </div>
+
+      <ul class="nav prod-links" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">О товаре</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="parametres-tab" data-toggle="tab" href="#parametres" role="tab" aria-controls="parametres" aria-selected="false">Параметры</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Отзывы</a>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+          <div class="col-12 prod-description-title">
+            <h3>Описание</h3>
+          </div>
+          <div class="prod-description-text">
+            <p class="w-100">Полутвердый пластичный однородный сыр, слегка ломкий на изгибе. Пажитник придает легкое ореховое послевкусие. В Италии считается столовым сыром, который подходит к любому времени суток и к любому блюду и к вину Вес головки 500 г. +/-10%. Цена за 1 кг. Продукция компании Alpenville изготовлена преимущественно из Шарангского молока</p>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="parametres" role="tabpanel" aria-labelledby="parametres-tab">
+          <div class="prod-parameters-text">
+            <ul>
+              <li>Калории: 420 </li>
+              <li>Жиры: 54</li>
+              <li>Белки: 27 </li>
+              <li>Углеводы: 18</li>
+              <li>Масса: 500 грамм</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+          <div class="col-12 prod-description-title">
+            <h3>Отзывы</h3>
+          </div>
+          <div class="prod-reviews-cards">
+            <div class="col-sm-12">
+  <div class="prod-reviews">
+    <div class="reviews-persone">
+      <div class="reviews-img">
+        <img class="rounded-circle" src="images/review_photo.png" alt="">
+      </div>
+      <div class="reviews-block">
+        <div class="reviews-name">
+          <h5>Анатолий Петров</h5>
+          <img src="images/review_dotted.svg" alt="">
+        </div>
+        <div class="reviews-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <div class="reviews-link">
+          <a href="#">vk.com/anatoliy</a>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-text">
+      <p>Заказал 5кг мяса, живу в Московской области. Как и обещал оператор, привезли через 1,5 часа. Свежее, как будто было живое еще по дороге. Действительно натуральные продукты. Я обязательно буду заказывать дальше. А теперь подробнее о плюсах и минусах всего магази...</p>
+    </div>
+    <div class="read_more">
+      <a href="#">Читать полностью</a>
+    </div>
+  </div>
+</div>
+
+            <div class="col-sm-12">
+  <div class="prod-reviews">
+    <div class="reviews-persone">
+      <div class="reviews-img">
+        <img class="rounded-circle" src="images/review_photo.png" alt="">
+      </div>
+      <div class="reviews-block">
+        <div class="reviews-name">
+          <h5>Анатолий Петров</h5>
+          <img src="images/review_dotted.svg" alt="">
+        </div>
+        <div class="reviews-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <div class="reviews-link">
+          <a href="#">vk.com/anatoliy</a>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-text">
+      <p>Заказал 5кг мяса, живу в Московской области. Как и обещал оператор, привезли через 1,5 часа. Свежее, как будто было живое еще по дороге. Действительно натуральные продукты. Я обязательно буду заказывать дальше. А теперь подробнее о плюсах и минусах всего магази...</p>
+    </div>
+    <div class="read_more">
+      <a href="#">Читать полностью</a>
+    </div>
+  </div>
+</div>
+
+            <div class="col-sm-12">
+  <div class="prod-reviews">
+    <div class="reviews-persone">
+      <div class="reviews-img">
+        <img class="rounded-circle" src="images/review_photo.png" alt="">
+      </div>
+      <div class="reviews-block">
+        <div class="reviews-name">
+          <h5>Анатолий Петров</h5>
+          <img src="images/review_dotted.svg" alt="">
+        </div>
+        <div class="reviews-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <div class="reviews-link">
+          <a href="#">vk.com/anatoliy</a>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-text">
+      <p>Заказал 5кг мяса, живу в Московской области. Как и обещал оператор, привезли через 1,5 часа. Свежее, как будто было живое еще по дороге. Действительно натуральные продукты. Я обязательно буду заказывать дальше. А теперь подробнее о плюсах и минусах всего магази...</p>
+    </div>
+    <div class="read_more">
+      <a href="#">Читать полностью</a>
+    </div>
+  </div>
+</div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+      <div class="col-md-4 col-sm-12">
+        <div class="prod-card">
+          <div class="prod-content">
+            <div class="prod-title">
+              <h2>Говядина 250гр</h2>
+            </div>
+            <div class="prod-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <div class="prod-rating-text">
+              <p>Кол-во отзывов: 23</p>
+            </div>
+            <div class="prod-price">
+              <div class="prod-price-text">
+                <p>Цена за уп.</p>
+              </div>
+              <div class="prod-price-title">
+                <p>1 050 ₽</p>
+              </div>
+            </div>
+            <div class="prod-count">
+              <div class="prod-count-text">
+                <p>Кол-во шт в упаковке</p>
+                  <h5>  4 шт.</h5>
+              </div>
+              <div class="prod-count-text">
+                <p class="text-button">Количество</p>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-outline-secondary">-</button>
+                  <button type="button" class="btn btn-outline-secondary">1шт</button>
+                  <button type="button" class="btn btn-outline-secondary">+</button>
+                </div>
+              <!-- </div> -->
+            </div>
+            <p class="small">Ед. изм.: упаковка</p>
+            <div class="total-price">
+              <div class="total-price-text">
+                <p>Итого к оплате</p>
+              </div>
+              <div class="total-price-summa">
+                <p>1 050 ₽</p>
+              </div>
+            </div>
+            <div class="prod-buttons">
+              <button type="button" class="btn btn-success btn-word">Купить</button>
+              <button type="button" class="btn btn-success"><img src="images/button-cart.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-content">
+            <div class="prod-delivery">
+              <div class="prod-delivery-title">
+                <h3>Закажите на 3000 RUB и получите</h3>
+              </div>
+              <div class="prod-delivery-content">
+                <div class="prod-delivery-content-first">
+                  <img src="images/prod-delivery-pig.svg" alt="">
+                  <p><b>30 RUB</b> на бонусный счет</p>
+                </div>
+                <div class="prod-delivery-content-second">
+                  <img src="images/prod-delivery-car.svg" alt="">
+                  <p><b>Бесплатная доставка</b></p>
+                </div>
+              </div>
+
+              <div class="prod-progressbar">
+  <p><b>1000</b> (минимальный заказ)</p>
+  <form class="range">
+    <div class="form-group range__slider">
+      <input type="range" step="5">
+    </div>
+    <div class="form-group range__value">
+      <label>Осталось <b><span></span></b> до бесплатной доставки</label>
+    </div>
+  </form>
+</div>
+
+              
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!------------------------- delivery ---------------------------->
+
+    <div class="container w-100">
+  <div class="row delivery">
+    <div class="col-12 delivery__title">
+      <h2>Бесплатная доставка по Москве и Области от 2999 RUB!</h2>
+      <button type="button" class="btn btn-success">Оформить</button>
+    </div>
+    <div class="delivery__img">
+      <img class="img-fluid" src="images/delivery.png" alt="">
+    </div>
+  </div>
+</div>
+
+
+    <!------------------- Footer ----------------------->
+
+    <footer>
+  <div class="container w-100">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="footer__phone-text">
+          Бесплатный звонок по РФ
+        </div>
+        <div class="footer__phone">
+          +7 (831) 282-60-00
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="footer__phone-text">
+          Для приема заказов
+        </div>
+        <div class="footer__phone">
+          +7 (904) 066-46-85
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="footer__social">
+          <a href="#">Мы в вконтакте</a>
+        </div>
+        <div class="footer__social">
+          <a href="#">Мы в instagram</a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="footer__register">
+          <a href="#" data-toggle="modal" data-target="#registerModal"><img src="images/person_smal.svg" alt="">Войти / Регистрация</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__time">
+      График работы по будням с 9:00 до 18:00
+    </div>
+    <div class="footer__email">
+      Email: info@.ru
+    </div>
+    <div class="footer__help">
+      <a href="support.html">Поддержка</a>
+    </div>
+    <div class="row">
+      <div class="d-flex footer__text">
+        <div class="col-sm-3">
+          ©2020. Пиросмани
+        </div>
+        <div class="col-sm-3">
+          <a href="#">Условия и соглашения</a>
+        </div>
+        <!-- <div class="col-sm-3">
+          <a href="#">Политика конфиденциальности</a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-------------------- Modal ----------------------->
+
+    <!-- ---------------------------registerModal---------------------- -->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <img src="images/person_modal.svg" alt="">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
+    <form>
+      <div class="form-group">
+        <input type="phone" class="form-control" placeholder="Телефон" id="exampleInputPhone" aria-describedby="phoneHelp">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Пароль" id="exampleInputPassword1">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Подтвердите пароль" id="exampleInputPassword1">
+      </div>
+      <div class="form-check register-text">
+        <input class="form-check-input" type="radio" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Хочу получать выгодные предложения от магазина</label>
+      </div>
+      <div class="form-check register-text">
+        <input class="form-check-input" type="radio" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Принимаю условия <a href="#">Пользовательского соглашения,<br> Политики конфиденциальности</a></label>
+      </div>
+
+      <div class="modal-text">
+        <button type="button" class="modal-btn btn btn-success">Зарегистрироваться</button>
+      </div>
+    </form>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- -----------------personeModal------------------------- -->
+
+<div class="modal fade" id="personeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="images/person_modal.svg" alt="">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <h5 class="modal-title" id="exampleModalLabel">Войти в личный кабинет</h5>
+      <form>
+        <div class="form-group">
+          <input type="phone" class="form-control" placeholder="Телефон" id="exampleInputPhone" aria-describedby="phoneHelp">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="Пароль" id="exampleInputPassword1">
+        </div>
+        <div class="modal-text">
+          <a href="#">Забыли пароль?</a>
+        </div>
+        <div class="modal-text">
+          <button type="button" class="modal-btn btn btn-success">Войти</button>
+        </div>
+        <div class="modal-text">
+          <p>Впервые у нас?  <a href="#">Зарегистрироваться</a></p>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/main.min.js"></script>
+  </body>
+</html>
