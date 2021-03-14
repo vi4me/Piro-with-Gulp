@@ -18,6 +18,38 @@
 body {
   font-family: "TT Norms Pro", sans-serif;
 }
+// ------------------------gradient
+
+.anim-gradient {
+  background: linear-gradient(335deg, #266624, #e18c1d, #e11d4a);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 18s ease infinite;
+  -moz-animation: AnimationName 18s ease infinite;
+  -o-animation: AnimationName 18s ease infinite;
+  animation: AnimationName 18s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 37%}
+  50%{background-position:100% 64%}
+  100%{background-position:0% 37%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 37%}
+  50%{background-position:100% 64%}
+  100%{background-position:0% 37%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 37%}
+  50%{background-position:100% 64%}
+  100%{background-position:0% 37%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 37%}
+  50%{background-position:100% 64%}
+  100%{background-position:0% 37%}
+}
 
 li {
   list-style-type: none;

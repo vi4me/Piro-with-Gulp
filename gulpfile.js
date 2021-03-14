@@ -9,6 +9,7 @@ const del          = require('del');
 const fileinclude  = require('gulp-file-include');
 const svgSprite    = require('gulp-svg-sprite');
 const group_media  = require("gulp-group-css-media-queries");
+const htmlmin      = require('gulp-htmlmin');
 
 
 
@@ -18,7 +19,6 @@ function htmlInclude() {
     .pipe(dest('app'))
     .pipe(browserSync.stream());
 }
-
 
 
 function styles() {
@@ -122,6 +122,14 @@ function build() {
 }
 
 
+function minify() {
+  return src('dist/*.html')
+  .pipe(htmlmin({ collapseWhitespace: true,
+                  removeComments: true
+                }))
+  .pipe(dest('dist'))
+}
+
 exports.svgSprites = svgSprites;
 exports.fileinclude = htmlInclude;
 exports.styles = styles;
@@ -130,7 +138,8 @@ exports.browserSync = browserSync;
 exports.scripts = scripts;
 exports.images = images;
 exports.cleanDist = cleanDist;
+exports.minify = minify;
 
 
-exports.build = series(cleanDist, images, build);
+exports.build = series(cleanDist, images, build, minify);
 exports.default = parallel(svgSprites, htmlInclude, styles, scripts, browsersync, watching);

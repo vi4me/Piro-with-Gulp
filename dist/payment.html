@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,7 @@
       <a class="navbar-brand second" href="index.html"><img src="images/logo1.png" alt=""></a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item dropdown active">
+          <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Меню</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#"><img src="images/Vector1.svg">Супы</a>
@@ -39,29 +39,29 @@
                 <a class="dropdown-item" href="#"><img src="images/Vector10.svg">Напитки</a>
               </div>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="delivery.html" class="nav-link">Доставка</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="payment.html" class="nav-link">Оплата</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="#" class="nav-link">Бронь стола</a>
           </li>
         </ul>
       </div>
       <div class="contacts">
         <ul class="d-flex align-items-center justify-content-start">
-          <li>
-            <img id="phone" src="images/phone.svg" alt="">
+          <li class="phone-card">
+            <a href="tel:78312826000"><img id="phone" src="images/phone.svg" alt=""></a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <p>+7 (831) 282-60-00</p>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="" data-toggle="modal" data-target="#personeModal"><img id="person" src="images/person.svg" alt=""></a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="cart.html"><img id="cart" src="images/cart.svg" alt=""></a>
           </li>
         </ul>
@@ -72,7 +72,7 @@
 
     <hr>
 
-    <div class="container delivery">
+    <div class="container delivery w-100">
       <div class="delivery__title">
         <h3>Оплата</h3>
       </div>
@@ -89,7 +89,7 @@
     <!------------------- Footer ----------------------->
 
   <footer>
-  <div class="container">
+  <div class="container w-100">
     <div class="row">
       <div class="col-sm-3">
         <div class="footer__phone-text">
@@ -109,10 +109,10 @@
       </div>
       <div class="col-sm-3">
         <div class="footer__social">
-          <a href="#">Мы в вконтакте ></a>
+          <a href="#">Мы в вконтакте</a>
         </div>
         <div class="footer__social">
-          <a href="#">Мы в instagram ></a>
+          <a href="#">Мы в instagram</a>
         </div>
       </div>
       <div class="col-sm-3">
@@ -139,9 +139,9 @@
         <div class="col-sm-3">
           <a href="#">Условия и соглашения</a>
         </div>
-        <div class="col-sm-3">
+        <!-- <div class="col-sm-3">
           <a href="#">Политика конфиденциальности</a>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -151,7 +151,7 @@
   <!-------------------- Modal ----------------------->
 
   <!-- ---------------------------registerModal---------------------- -->
-<div class="modal fade modal-dialog-centered" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog">
   <div class="modal-content">
     <div class="modal-header">
@@ -192,8 +192,8 @@
 
 <!-- -----------------personeModal------------------------- -->
 
-<div class="modal fade modal-dialog-centered" id="personeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal fade" id="personeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
     <div class="modal-content">
       <div class="modal-header">
         <img src="images/person_modal.svg" alt="">
