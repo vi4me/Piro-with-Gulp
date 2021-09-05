@@ -94,12 +94,6 @@ hr {
   margin: 34px 7px 35px 35px;
 }
 
-.second img {
-  width: 16px;
-  height: 31px;
-  margin: 34px 60px 35px 0px;
-}
-
 .nav-item {
   margin: 39px 45px 39px 0;
   @media (max-width: 992px){
@@ -436,7 +430,7 @@ footer {
 }
 .modal-content {
   max-width: 358px;
-  max-height: 420px;
+  max-height: 510px;
   margin: 0 auto;
   @media (max-width: 757px) {
     width: 302px;
@@ -547,12 +541,18 @@ footer {
   margin-bottom: 60px;
 }
 /*-------------- support---------------- */
+.support .delivery__title {
+  margin: 18px 0;
+}
+.support form {
+  width: 80%;
+}
 .support textarea {
   background: #F9F9F9;
   border-radius: 5px;
 }
 .support button {
-  margin: 45px 0 249px 0;
+  margin: 25px 0 29px 0;
 }
 
 /* -------------reviews ------------*/
@@ -638,24 +638,39 @@ footer {
 }
 /*----------------- cart------------ */
 .cart__title {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
 }
+
 .carts {
   margin: 0 auto;
 }
 .carts a, p, .btn-group {
   align-self: center;
-  margin: 10px;
+  margin: calc(5px + (10 - 5) * ((100vw - 320px) / (1250 - 320)));
+}
+.cart {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
 }
 .cart img {
   height: 50px;
 }
-.cart p {
-  font-size: 16px;
+.cart .name {
+  font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1250 - 320)));
 }
-#cart.prod-card {
+.cart .count {
+  font-size: calc(11px + (16 - 11) * ((100vw - 320px) / (1250 - 320)));
+}
+.cart .price {
+  font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (1250 - 320)));
+  // font-size: 16px;
+}
+#carts.prod-card {
   text-align: center;
+  width: 100%;
 }
 
 

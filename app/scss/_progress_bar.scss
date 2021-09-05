@@ -1,15 +1,19 @@
 
-.form-group {
+#carts .form-group {
  display: flex;
  flex-direction: column;
  justify-content: center;
+ width: 80vw;
 }
-
-.range__slider {
-  width: 80%;
+#carts .prod-delivery h3 {
+  text-align: center;
+  font-size: calc(15px + (22 - 15) * ((100vw - 320px) / (1250 - 320)));
+}
+#carts .prod-delivery p {
+  text-align: center;
+  font-size: calc(15px + (15 - 12) * ((100vw - 320px) / (1250 - 320)));
 }
 .range__slider [type="range"] {
- width: 100%;
  -webkit-appearance: none;
  height: 3px;
  border-radius: 6px;

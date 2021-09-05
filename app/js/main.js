@@ -81,7 +81,7 @@ class Slider {
 
   // Format the money
   asMoney(value) {
-    return parseFloat(value) + ' RUB'
+    return parseFloat(value) + ' UAH'
       .toLocaleString('en-US', { maximumFractionDigits: 2 })
   }
 

@@ -1,32 +1,89 @@
-@@include('_head.html',{"title":"pirosmani"})
+@@include('_head.html',{"title":"vi4me"})
 @@include('_header.html',{})
 
-    <hr>
+<hr>
 
-    <div class="container support">
-      <div class="delivery__title">
-        <h3>Оплата</h3>
-      </div>
-      <form>
-        <div class="form-group">
-          <textarea class="form-control" placeholder="Напишите сообщение..." id="exampleFormControlTextarea1" rows="4"></textarea>
+<div class="container-fluid support">
+  <div class="delivery__title">
+    <h3>Оплата</h3>
+  </div>
+  <form>
+    <div class="form-group">
+      <textarea class="form-control" placeholder="Напишите сообщение..." id="exampleFormControlTextarea1"
+        rows="4"></textarea>
+    </div>
+  </form>
+  <button type="button" class="btn btn-success">Отправить</button>
+</div>
+
+<!------------------- Footer ----------------------->
+
+<footer style="height: 60vh;">
+  <div class="container w-100">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="footer__phone-text">
+          Бесплатный звонок по UA
         </div>
-      </form>
-      <button type="button" class="btn btn-success">Отправить</button>
+        <div class="footer__phone">
+          +38 (099) 000-00-00
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="footer__phone-text">
+          Для приема заказов
+        </div>
+        <div class="footer__phone">
+          +38 (099) 000-00-00
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="footer__social">
+          <a href="#">Мы в вконтакте</a>
+        </div>
+        <div class="footer__social">
+          <a href="#">Мы в instagram</a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="footer__register">
+          <a href="#" data-toggle="modal" data-target="#registerModal"><img src="images/person_smal.svg" alt="">Войти /
+            Регистрация</a>
+        </div>
+      </div>
     </div>
 
-    <!------------------- Footer ----------------------->
+    <div class="footer__time">
+      График работы по будням с 9:00 до 18:00
+    </div>
+    <div class="footer__email">
+      Email: info@.ua
+    </div>
+    <div class="footer__help">
+      <a href="support.html">Поддержка</a>
+    </div>
+    <div class="row">
+      <div class="d-flex footer__text">
+        <div class="col-sm-3">
+          ©2020. vi4me
+        </div>
+        <div class="col-sm-3">
+          <a href="#">Условия и соглашения</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
-    @@include('_footer.html',{})
+
+<!-------------------- Modal ----------------------->
+
+@@include('_modal.html',{})
 
 
-    <!-------------------- Modal ----------------------->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
 
-    @@include('_modal.html',{})
-
-
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="js/main.min.js"></script>
-  </body>
 </html>
