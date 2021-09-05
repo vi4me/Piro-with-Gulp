@@ -342,7 +342,7 @@ template {
 }
 
 .prod-content {
-  padding: 10%;
+  padding: 5%;
 }
 
 .prod-title h2 {
@@ -459,7 +459,7 @@ template {
 
 .prod-delivery-title h3 {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 17px;
   color: #000000;
 }
@@ -525,18 +525,24 @@ template {
   color: #828282;
 }
 
-.form-group {
+#carts .form-group {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 80vw;
 }
 
-.range__slider {
-  width: 80%;
+#carts .prod-delivery h3 {
+  text-align: center;
+  font-size: calc(15px + (22 - 15) * ((100vw - 320px) / (1250 - 320)));
+}
+
+#carts .prod-delivery p {
+  text-align: center;
+  font-size: calc(15px + (15 - 12) * ((100vw - 320px) / (1250 - 320)));
 }
 
 .range__slider [type="range"] {
-  width: 100%;
   -webkit-appearance: none;
   height: 3px;
   border-radius: 6px;
@@ -668,12 +674,6 @@ hr {
   width: 87px;
   height: 32px;
   margin: 34px 7px 35px 35px;
-}
-
-.second img {
-  width: 16px;
-  height: 31px;
-  margin: 34px 60px 35px 0px;
 }
 
 .nav-item {
@@ -1029,7 +1029,7 @@ footer {
 
 .modal-content {
   max-width: 358px;
-  max-height: 420px;
+  max-height: 510px;
   margin: 0 auto;
 }
 
@@ -1151,13 +1151,21 @@ footer {
   margin-bottom: 60px;
 }
 
+.support .delivery__title {
+  margin: 18px 0;
+}
+
+.support form {
+  width: 80%;
+}
+
 .support textarea {
   background: #F9F9F9;
   border-radius: 5px;
 }
 
 .support button {
-  margin: 45px 0 249px 0;
+  margin: 25px 0 29px 0;
 }
 
 .prod-reviews-cards.slick-initialized.slick-slider {
@@ -1272,7 +1280,8 @@ label {
 }
 
 .cart__title {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -1285,19 +1294,34 @@ p,
 .btn-group {
   -ms-grid-row-align: center;
       align-self: center;
-  margin: 10px;
+  margin: calc(5px + (10 - 5) * ((100vw - 320px) / (1250 - 320)));
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
 }
 
 .cart img {
   height: 50px;
 }
 
-.cart p {
-  font-size: 16px;
+.cart .name {
+  font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1250 - 320)));
 }
 
-#cart.prod-card {
+.cart .count {
+  font-size: calc(11px + (16 - 11) * ((100vw - 320px) / (1250 - 320)));
+}
+
+.cart .price {
+  font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (1250 - 320)));
+}
+
+#carts.prod-card {
   text-align: center;
+  width: 100%;
 }
 
 @media (max-width: 1130px) {
@@ -1322,7 +1346,7 @@ p,
 
 @media (max-width: 768px) {
   .prod-links a {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .prod-count-text h5 {
